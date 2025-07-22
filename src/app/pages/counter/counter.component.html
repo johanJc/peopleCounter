@@ -1,0 +1,41 @@
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 p-4">
+  <div class="bg-blue-200 p-4 rounded-xl h-20 text-center text-xl content-center shadow-md flex place-content-between">
+    <div class="pt-3 font-bold">
+      Hombres
+    </div>
+    <div class="actions flex gap-3">
+      <button class="p-10 pt-3 bg-blue-500 rounded-xl text-[#fff]" (click)="increment('men')"><i class="fa-solid fa-plus"></i></button>
+      <button class="p-10 pt-3 bg-pink-500 rounded-xl text-[#fff]" (click)="decrement('men')"><i class="fa-solid fa-minus"></i></button>
+    </div>
+  </div>
+  <div class="bg-blue-200 p-4 rounded-xl h-20 text-center text-xl content-center shadow-md flex place-content-between">
+     <div class="pt-3 font-bold">
+      Mujeres
+    </div>
+    <div class="actions flex gap-3">
+      <button class="p-10 pt-3 bg-blue-500 rounded-xl text-[#fff]" (click)="increment('women')"><i class="fa-solid fa-plus"></i></button>
+      <button class="p-10 pt-3 bg-pink-500 rounded-xl text-[#fff]" (click)="decrement('women')"><i class="fa-solid fa-minus"></i></button>
+    </div>
+  </div>
+  <div class="bg-blue-200 p-4 rounded-xl h-20 text-center text-xl content-center shadow-md flex place-content-between">
+     <div class="pt-3 font-bold">
+      Niños
+    </div>
+    <div class="actions flex gap-3">
+      <button class="p-10 pt-3 bg-blue-500 rounded-xl text-[#fff]" (click)="increment('children')"><i class="fa-solid fa-plus"></i></button>
+      <button class="p-10 pt-3 bg-pink-500 rounded-xl text-[#fff]" (click)="decrement('children')"><i class="fa-solid fa-minus"></i></button>
+    </div>
+  </div>
+</div>
+<hr>
+<div class="info p-4">
+  <p class="text-xl mb-3"><span class="font-bold">Fecha:</span> {{currentDate}}</p>
+  <p class="text-xl mb-3"><span class="font-bold">Hombres:</span> {{countMen}}</p>
+  <p class="text-xl mb-3"><span class="font-bold">Mujeres:</span> {{countWomen}}</p>
+  <p class="text-xl mb-3"><span class="font-bold">Niños:</span> {{countChildren}}</p>
+  <p class="text-xl"><span class="font-bold">Total:</span> {{countTotal}}</p>
+</div>
+
+<div class="buttons mt-4 flex justify-center gap-4">
+  <button class="bg-[#2373ba] active:bg-[#000] p-4 rounded-xl text-[#fff] font-bold" (click)="copy()">Copiar</button>
+</div>
